@@ -3,7 +3,7 @@ The files in this repository were used to configure the network depicted below.
 
 [Network-Diagram.pdf](https://github.com/G0nkDr0id395/Project_13/files/7080281/Network-Diagram.pdf)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
   https://github.com/G0nkDr0id395/Project_13/blob/main/Ansible/ansible_configfile.yml
 
@@ -129,7 +129,7 @@ SSH into the control node and follow the steps below:
 - You update the filebeat.yml file. You have to create a new group and add the private IP of Elk-Server to this group. The you assign the private IP of the Elk-Server in two line of the .yml file
 - Run the public IP address of 0.0.0.5601
 
-##To run the playbook
+**To run the playbook**
 1. Use: "ssh sysadmin@<Jump Box Public IP>"
 2. Start Ansible Docker container: "sudo docker start <Ansible Container>
 3. Attach shell to container: sudo docker attach <Ansible Container Name>
